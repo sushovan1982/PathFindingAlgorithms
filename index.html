@@ -7,7 +7,7 @@
     <script src="Dijkstra.js"></script>
     <script src="AStar.JS"></script>
     <title>Path Finding Algorithms Visualization</title>
-</head>
+
 <script>
     function resetForm() {
         window.location.reload();
@@ -70,30 +70,29 @@
         }        
     }
 </script>
-
+</head>
 <body>
-    <div id="container">
-        <div id="info">
-            <p style="text-align: center;"><u>INSTRUCTIONS:-</u></p>
-            <p>1) Click within the white grid to create obstacles.</p>
-            <p>2) Drag the green node to set the start position.</p>
-            <p>3) Drag the red node to set the end position.</p>
-            <p>4) Choose algorithm from dropdown list.</p>
-            <p>5) Click the Go button to start animation.</p>
-            <select id="slAlgoName">
-                <option value="dijkstra">Dijkstra</option>
-                <option value="astar">A*</option>
-            </select>
-            <br /><br />
-            <input type="checkbox" id="chkDiagonal" value="Diagonal" />
-            Allow diagonal<br /><br />
-            <button type="button" class="button" id="btnGo" onclick="callSearch()">
-                Go!
-            </button>
-            <br />
-            <br />
-            <input type="reset" class="button" onclick="resetForm()" />
-        </div>
+    <div id="container"></div>
+    <div id="info">
+        <p style="text-align: center;"><u>INSTRUCTIONS:-</u></p>
+        <p>1) Click within the white grid to create obstacles.</p>
+        <p>2) Drag the green node to set the start position.</p>
+        <p>3) Drag the red node to set the end position.</p>
+        <p>4) Choose algorithm from dropdown list.</p>
+        <p>5) Click the Go button to start animation.</p>
+        <select id="slAlgoName">
+            <option value="dijkstra">Dijkstra</option>
+            <option value="astar">A*</option>
+        </select>
+        <br /><br />
+        <input type="checkbox" id="chkDiagonal" value="Diagonal" />
+        Allow diagonal<br /><br />
+        <button type="button" class="button" id="btnGo" onclick="callSearch()">
+            Go!
+        </button>
+        <br />
+        <br />
+        <input type="reset" class="button" onclick="resetForm()" />
     </div>
 </body>
 
