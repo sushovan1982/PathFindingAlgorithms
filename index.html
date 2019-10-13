@@ -6,6 +6,7 @@
     <script src="PageLayout.js"></script>
     <script src="Dijkstra.js"></script>
     <script src="AStar.js"></script>
+    <script src="IDAStar.js"></script>
     <title>Path Finding Algorithms Visualization</title>
 
 <script>
@@ -67,7 +68,16 @@
                 endColIndex,
                 chk.checked
             );
-        }        
+        }  
+        else if (sel.value == 'idastar') {
+            IDAStar(
+                startRowIndex,
+                startColIndex,
+                endRowIndex,
+                endColIndex,
+                chk.checked
+            );
+        }            
     }
 </script>
 </head>
@@ -83,6 +93,7 @@
         <select id="slAlgoName">
             <option value="dijkstra">Dijkstra</option>
             <option value="astar">A*</option>
+            <option value="idastar">IDA*</option>
         </select>
         <br /><br />
         <input type="checkbox" id="chkDiagonal" value="Diagonal" />
