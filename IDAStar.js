@@ -28,7 +28,7 @@ function IDAStar(startRowIndex,
 
     function animateCells() {
         let cellValue = document.getElementById(path[0]);
-        cellValue.style.backgroundColor = '#f5ffab';
+        cellValue.style.backgroundColor = '#b7d5eb';
         path.shift()
         if (path.length == 0) {
             cancelAnimationFrame(animationRequestID);
@@ -196,7 +196,7 @@ function IDAStar(startRowIndex,
         }
 
         for (let j = 0; j < st.length - 1; j++) {
-            connectTwoPoints(st[j], st[j + 1], '#670087', '2');
+            connectTwoPoints(st[j], st[j + 1], '#615f00', '2');
         }
         return;
     }
