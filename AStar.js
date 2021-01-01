@@ -180,7 +180,7 @@ function AStar(startRowIndex,
         }
 
         for (let j = 0; j < st.length - 1; j++) {
-            connectTwoPoints(st[j], st[j + 1], '#5D1506', '2');
+            connectTwoPoints(st[j], st[j + 1], '#16065D', '2');
         }
         return;
     }
