@@ -26,7 +26,7 @@ function AStar(startRowIndex,
 
     function animateCells() {
         let cellValue = document.getElementById(path[0]);
-        cellValue.style.backgroundColor = '#f5ffab';
+        cellValue.style.backgroundColor = '#43cbbe';
         path.shift()
         if (path.length == 0) {
             cancelAnimationFrame(animationRequestID);
@@ -180,7 +180,7 @@ function AStar(startRowIndex,
         }
 
         for (let j = 0; j < st.length - 1; j++) {
-            connectTwoPoints(st[j], st[j + 1], '#670087', '2');
+            connectTwoPoints(st[j], st[j + 1], '#2a5620', '2');
         }
         return;
     }
